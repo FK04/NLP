@@ -1,0 +1,8 @@
+#Tokenization used in natural language processing to split paragraphs and sentences into smaller units that can be more easily assigned meaning.
+
+input_text="Natural Language Processing"
+tokens=input_text.split()
+print(tokens)
+
+OUTPUT:-
+['Natural', 'Language', 'Processing']
