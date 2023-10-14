@@ -1,0 +1,15 @@
+#Stemming is a technique used to reduce an inflected word down to its word stem
+#It is used to reduce words to their root or base form. The goal of stemming is to simplify and standardize words.
+
+import nltk
+from nltk.stem import PorterStemmer
+stemmer=PorterStemmer()
+word='walking'
+stemmed_word=stemmer.stem(word)
+print("Original word",word)
+print("Stemmed word",stemmed_word)
+
+
+OUTPUT:-​
+Original word walking
+Stemmed word walk
