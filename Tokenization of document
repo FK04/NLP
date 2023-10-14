@@ -1,0 +1,10 @@
+#Tokenization of words from a txt doc
+
+path='C:/Users/OneDrive/Documents/abcd.txt'
+with open(path) as file:
+    input_text=file.read()
+tokens=input_text.split()
+print(tokens)
+
+OUTPUT:-
+['Hello', 'Welcome', 'to', 'NLP', 'Lab', 'NLP', 'is', 'Natural', 'Language', 'Processing', 'How', 'are', 'you', 'What', 'are', 'you', 'Doing', 'now']
