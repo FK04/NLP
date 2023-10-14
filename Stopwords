@@ -1,0 +1,12 @@
+#Stop words are words in any language or corpus that occur frequently. For some NLP tasks, they do not provide any additional or valuable information to the text containing them.
+#Removing stop words from a given sentencs
+
+stopwords_list=['the','an','me','my','is','a','i','you','this','on','who','what','how']
+text='this is nlp lab how is class going on is it intresting'
+words=text.split()
+filter_words=[word for word in words if word.lower() not in stopwords_list]
+filter_text=' '.join(filter_words)
+print(filter_text)
+
+OUTPUT:-
+nlp lab class going it intresting
