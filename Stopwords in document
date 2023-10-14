@@ -1,0 +1,13 @@
+#Removing Stopwords from a txt document
+
+path='C:/Users/OneDrive/Documents/abcd.txt'
+with open(path) as file:
+    input_text=file.read()
+stopwords_list=['the','an','me','my','is','a','i','are','you','this','on','who','what','how']
+tokens=input_text.split()
+filter_words=[word for word in tokens if word.lower() not in stopwords_list]
+filter_text=' '.join(filter_words)
+print(filter_text)
+
+OUTPUT:-
+Hello Welcome to NLP Lab NLP Natural Language Processing  Doing now
